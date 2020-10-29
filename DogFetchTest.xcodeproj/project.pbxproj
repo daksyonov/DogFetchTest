@@ -13,6 +13,9 @@
 		3F56903A253E14E4006733A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F569038253E14E4006733A8 /* Main.storyboard */; };
 		3F56903C253E14E5006733A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F56903B253E14E5006733A8 /* Assets.xcassets */; };
 		3F56903F253E14E5006733A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F56903D253E14E5006733A8 /* LaunchScreen.storyboard */; };
+		3F56904D253E1594006733A8 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56904C253E1594006733A8 /* DogAPI.swift */; };
+		3F569050253E1DC7006733A8 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56904F253E1DC7006733A8 /* DogImage.swift */; };
+		BC989666254AB069000D6450 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC989665254AB069000D6450 /* BreedsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3F56903B253E14E5006733A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F56903E253E14E5006733A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F569040253E14E5006733A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F56904C253E1594006733A8 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		3F56904F253E1DC7006733A8 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		BC989665254AB069000D6450 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		3F569031253E14E4006733A8 /* DogFetchTest */ = {
 			isa = PBXGroup;
 			children = (
-				3F569032253E14E4006733A8 /* AppDelegate.swift */,
-				3F569034253E14E4006733A8 /* SceneDelegate.swift */,
-				3F569036253E14E4006733A8 /* ViewController.swift */,
-				3F569038253E14E4006733A8 /* Main.storyboard */,
-				3F56903B253E14E5006733A8 /* Assets.xcassets */,
-				3F56903D253E14E5006733A8 /* LaunchScreen.storyboard */,
+				3F56904B253E1585006733A8 /* Model */,
+				3F569048253E1510006733A8 /* Controller */,
+				3F569047253E1506006733A8 /* View */,
 				3F569040253E14E5006733A8 /* Info.plist */,
 			);
 			path = DogFetchTest;
+			sourceTree = "<group>";
+		};
+		3F569047253E1506006733A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F569038253E14E4006733A8 /* Main.storyboard */,
+				3F56903B253E14E5006733A8 /* Assets.xcassets */,
+				3F56903D253E14E5006733A8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F569048253E1510006733A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F569034253E14E4006733A8 /* SceneDelegate.swift */,
+				3F569032253E14E4006733A8 /* AppDelegate.swift */,
+				3F569036253E14E4006733A8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F56904B253E1585006733A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F56904C253E1594006733A8 /* DogAPI.swift */,
+				3F56904F253E1DC7006733A8 /* DogImage.swift */,
+				BC989665254AB069000D6450 /* BreedsList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F569037253E14E4006733A8 /* ViewController.swift in Sources */,
+				3F569050253E1DC7006733A8 /* DogImage.swift in Sources */,
+				BC989666254AB069000D6450 /* BreedsList.swift in Sources */,
 				3F569033253E14E4006733A8 /* AppDelegate.swift in Sources */,
 				3F569035253E14E4006733A8 /* SceneDelegate.swift in Sources */,
+				3F56904D253E1594006733A8 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
